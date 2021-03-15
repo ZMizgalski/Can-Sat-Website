@@ -1,0 +1,45 @@
+<div class="main-container">
+  <div
+    class="content-container"
+    [ngClass]="{
+      'content-container__not-found': router.url === '/not-found',
+      'content-container__logged-ui': router.url === '/logged-ui'
+    }"
+  >
+    <div
+      class="content__header"
+      [ngClass]="{
+        'content-header__not-found': router.url === '/not-found',
+        'content-header__logged-ui': router.url === '/logged-ui'
+      }"
+    >
+      <img
+        *ngIf="!(router.url === '/not-found' || router.url === '/logged-ui')"
+        class="header__img"
+        src="../../assets/output-onlinepngtools_1.png"
+      />
+      <button
+        *ngIf="router.url === '/home'"
+        class="header__button"
+        (click)="navigate()"
+      >
+        Login
+      </button>
+      <button
+        *ngIf="router.url === '/login'"
+        class="header__button"
+        (click)="navigate()"
+      >
+        Home
+      </button>
+    </div>
+    <div
+      class="content__outlet"
+      [ngClass]="{
+        'content__outlet__logged-ui': router.url === '/logged-ui'
+      }"
+    >
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

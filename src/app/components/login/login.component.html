@@ -1,0 +1,79 @@
+<div class="main-container">
+  <form class="form-container" [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <h2>Login</h2>
+    <span class="p-input-icon-right">
+      <i
+        *ngIf="formGroup.controls['email'].valid"
+        class="loading-icon"
+        class="pi pi-spin pi-spinner"
+      ></i>
+      <input
+        formControlName="email"
+        class="login-input p-inputtext-lg"
+        placeholder="Email"
+        type="text"
+        pInputText
+      />
+    </span>
+    <small
+      *ngIf="
+        !formGroup.controls['email'].valid &&
+        formGroup.controls['email'].touched
+      "
+      class="p-invalid"
+      >Email incorrect</small
+    >
+    <span class="p-input-icon-right">
+      <i
+        *ngIf="formGroup.controls['password'].valid"
+        class="loading-icon"
+        class="pi pi-spin pi-spinner"
+      ></i>
+      <input
+        id="password"
+        formControlName="password"
+        class="login-input p-inputtext-lg"
+        placeholder="Password"
+        type="password"
+        pInputText
+      />
+    </span>
+    <small
+      *ngIf="
+        !formGroup.controls['password'].valid &&
+        formGroup.controls['password'].touched
+      "
+      class="p-invalid"
+      >Password Incorrect</small
+    >
+    <span class="form__remember-me-container">
+      <button
+        pButton
+        (click)="handleRememberChange($event)"
+        pRipple
+        type="button"
+        *ngIf="remeberMe"
+        icon="pi pi-check-circle"
+        class="p-button-rounded remember-me__button"
+      ></button>
+      <button
+        (click)="handleRememberChange($event)"
+        pButton
+        pRipple
+        *ngIf="!remeberMe"
+        type="button"
+        icon="pi pi-circle-off"
+        class="p-button-rounded p-button-secondary p-button-outlined remember-me__button"
+      ></button>
+      <h4 style="margin: 10px">Remember me</h4>
+    </span>
+    <button
+      pButton
+      pRipple
+      [disabled]="!formGroup.valid"
+      type="sumbit"
+      label="Login"
+      class="p-button-rounded p-button-warning login-button"
+    ></button>
+  </form>
+</div>

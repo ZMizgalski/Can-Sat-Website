@@ -1,0 +1,61 @@
+<div class="main-container">
+  <div class="user-container">
+    <div class="user__logo">
+      <i class="pi pi-user user__icon"></i>
+    </div>
+    <div class="user__logout-container">
+      <h1 class="user__title">Użytkownik</h1>
+      <button
+        pButton
+        pRipple
+        type="button"
+        label="Logout"
+        (click)="logout()"
+        class="p-button-rounded user__button"
+      ></button>
+    </div>
+  </div>
+  <div class="sensors-container">
+    <div class="sensor-container" *ngFor="let sensor of sensors">
+      <span class="sensor-data-container">
+        <p class="sensor__title1">{{ sensor.name }}:</p>
+        <p class="sensor__title2">
+          {{ sensor.value }}
+        </p>
+      </span>
+      <button
+        (click)="downloadData(sensor.endpoint)"
+        pButton
+        style="margin: 10px"
+        pRipple
+        type="button"
+        icon="pi pi-download"
+        class="p-button-rounded p-button-secondary"
+      ></button>
+    </div>
+  </div>
+</div>
+<div class="map-divider">
+  <i class="pi pi-chevron-down graph_icon"></i>
+  <p class="graph__text">Mapa</p>
+  <i class="pi pi-chevron-down graph_icon"></i>
+</div>
+<div class="map-container">
+  <!-- map -->
+</div>
+<div class="grapth-divider">
+  <i class="pi pi-chevron-down graph_icon"></i>
+  <p class="graph__text">Wykresy</p>
+  <i class="pi pi-chevron-down graph_icon"></i>
+</div>
+<div class="graph-container">
+  <!-- graph -->
+</div>
+<div class="grapth-divider">
+  <i class="pi pi-chevron-down graph_icon"></i>
+  <p class="graph__text">Wykresy</p>
+  <i class="pi pi-chevron-down graph_icon"></i>
+</div>
+<div class="graph-container">
+  <!-- graph -->
+</div>

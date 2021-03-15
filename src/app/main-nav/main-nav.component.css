@@ -1,0 +1,86 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url(../../assets/00000000.jpg) no-repeat center center;
+  background-size: cover;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background: url(../../assets/243292-artwork-digital_art-planet-space-comet-colorful-spaceship-minimalism-space_art-comic_art-rockets.jpg)
+    no-repeat center center;
+  background-size: cover;
+}
+.content-container__not-found {
+  background: transparent;
+}
+.content-container__logged-ui {
+  min-height: 100vh;
+  width: 100% !important;
+  border-radius: 0 !important;
+  background-attachment: fixed;
+}
+.content__header {
+  height: 15vh;
+  min-height: 125px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+}
+.content-header__not-found {
+  display: none;
+}
+.content-header__logged-ui {
+  height: unset;
+  min-height: unset;
+}
+.content__outlet {
+  width: 100%;
+  min-height: 400px;
+  height: 60vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.content__outlet__logged-ui {
+  min-height: 830px;
+  height: unset !important;
+}
+.header__img {
+  max-width: 50%;
+  max-height: 50%;
+}
+.header__button {
+  min-width: 100px;
+  padding: 12px 25px 12px 25px;
+  border-radius: 30px;
+  border: none;
+  background: white;
+  font-size: 18px;
+  outline: none;
+  color: black;
+  letter-spacing: 0.75px;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 300px) {
+  .content__header {
+    justify-content: center;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .content-container {
+    width: 80%;
+    border-radius: 30px;
+  }
+}

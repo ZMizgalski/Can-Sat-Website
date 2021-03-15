@@ -1,0 +1,23 @@
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container__upper-text {
+  font-size: 20px;
+  color: #f6ff00;
+}
+.container__main-text {
+  font-size: 150px;
+  margin: 0;
+  color: #f6ff00;
+}
+.container__button {
+  color: #f6ff00;
+}
+.return-button {
+  color: black !important;
+  font-size: 20px;
+  font-weight: 700;
+}

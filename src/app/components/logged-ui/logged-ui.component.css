@@ -1,0 +1,128 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: transparent;
+}
+.user-container {
+  margin: 20px;
+  height: 270px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  border-radius: 30px;
+  background: #ffffff;
+}
+.user__title {
+  font-size: 25px;
+}
+.user__logout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.user__logo {
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ff217c;
+  border-radius: 100%;
+}
+.user__icon {
+  color: white;
+  max-height: 100%;
+  max-width: 100%;
+  font-size: 60px;
+}
+.user__button {
+  color: white;
+  background: #483d6b;
+}
+.sensors-container {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  justify-content: center;
+  align-items: center;
+}
+.sensor-container {
+  min-height: 75px;
+  margin: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px;
+}
+.sensor-data-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sensor__title1 {
+  font-weight: 700;
+  margin-right: 10px;
+}
+.sensor__title2 {
+  font-weight: 700;
+  color: brown;
+}
+.map-divider {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.map-container {
+  min-height: 600px;
+  width: 100%;
+}
+.grapth-divider {
+  height: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.graph-container {
+  min-height: 600px;
+  width: 100%;
+}
+.graph_icon {
+  color: white;
+  font-size: 20px;
+}
+.graph__text {
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+}
+@media only screen and (max-width: 320px) {
+  .user-container {
+    width: unset;
+    height: unset;
+    padding: 10px;
+  }
+  .sensor-container {
+    width: unset;
+    flex-direction: column;
+  }
+  .sensor-data-container {
+    flex-direction: column;
+  }
+  .user__title {
+    font-size: 10px;
+  }
+}
