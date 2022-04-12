@@ -32,7 +32,7 @@ List the ready features here:
 ![img](https://github.com/ZMizgalski/Can-Sat-Website/blob/master/imgs/3.png)
 
 ## Setup
-- Angular 10.0.8
+- npm i
 
 ## Usage
 1. Create a folder named you like.
