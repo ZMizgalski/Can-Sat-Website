@@ -1,27 +1,55 @@
-# CanSatAngular
+# Can-Sat-Website
+>  This website was made for CanSat competition [Link](https://esero.kopernik.org.pl/konkurs-cansat/) in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.1.
+## Table of Contents
+* [General Info](#general-information)
+* [Technologies Used](#technologies-used)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Project Status](#project-status)
+* [Room for Improvement](#room-for-improvement)
+* [Contact](#contact)
+* [License](#license)
 
-## Development server
+## General Information
+- "CanSat is an international competition of the European Space Agency. It consists in independently constructing simulators of space probes by students and carrying out scientific research with them. Thanks to this, young people have a chance to get involved in an original scientific and engineering project, already at the stage of school education."
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Technologies Used
+- Angular
+- PrimeNG
 
-## Code scaffolding
+## Features
+List the ready features here:
+- Atmospheric measurements
+- Login Page
+- Responssive Design
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Screenshots
+![img](https://github.com/ZMizgalski/Can-Sat-Website/blob/master/imgs/1.png)
+![img](https://github.com/ZMizgalski/Can-Sat-Website/blob/master/imgs/2.png)
+![img](https://github.com/ZMizgalski/Can-Sat-Website/blob/master/imgs/3.png)
 
-## Build
+## Setup
+- Angular 10.0.8
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Usage
+1. Create a folder named you like.
+2. Inside your folder, open console and paste: `git clone https://github.com/ZMizgalski/Can-Sat-Website.git`
+5. Then you are ready to go just open it in any Editor. (I prefer VSCode) [Download here](https://code.visualstudio.com/)
 
-## Running unit tests
+## Project Status
+Project is:  _complete_ .
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Room for Improvement
+- Security
+- http requests to cloud database
+- RF onnection with satellite
 
-## Running end-to-end tests
+## Contact
+Created by [@zmizgalski](https://zmizgalski.github.io/) - feel free to contact me!
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## License
+This project is open source and available under the [... License](https://github.com/ZMizgalski/Can-Sat-Website/blob/master/LICENSE).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
